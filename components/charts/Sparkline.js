@@ -129,7 +129,7 @@ export default {
         }
       }
       if (rect) {
-        tooltip.style.left = `${this.curEvt.cx + rect.width * .25}px`
+        tooltip.style.left = `${this.curEvt.cx + window.scrollX - rect.width - 5}px`
         tooltip.style.top = `${this.curEvt.cy - rect.height}px`
         tooltip.style.zIndex = this.zIndex
         try {
